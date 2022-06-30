@@ -24,7 +24,9 @@ function automaticSlidingStickyNav() {
         lastScrollTop = st <= 0 ? 0 : st;
     }, false);
 }
+$(document).ready(function(){
 $.getScript("https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js")
     .done(function(script, textStatus) {
         automaticSlidingStickyNav();
     })
+});
